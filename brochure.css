@@ -255,25 +255,55 @@ table, th, td
     background-image: url("Images/AerialView.jpg");
 }
 
-
+.UselessCoolAnimation
+{
+    background-color: #DAAD86;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.Circle
+{
+    height: 200px;
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin: 50px 50px 50px 50px;
+    background-image: url("Images/BackgroundOfThingy.png");
+    animation: CircleAnimation 5s ease-in-out infinite;
+}
+@keyframes CircleAnimation {
+    0%
+    {
+        transform: rotate(0deg)
+    }
+    50%
+    {
+        transform: rotate(180deg)
+    }
+    100%
+    {
+        transform: rotate(360deg)
+    }
+}
 .ContactUs
 {
     height: 100px;
-    background-color: black;
+    background-color: #DAAD86;
     display: flex;
 }
 .ContactUs .ContactUsHeader
 {
     width: 25%;
-    color: rgb(255, 61, 61);
+    color: #659DBD;
     font-size: 30px;
     font-weight: 1000;
     margin: 10px 10px 10px 10px;
 }
 .ContactUsContent
 {
-    height: 300px;
-    background-color: black;
+    height: 170px;
+    background-color: #DAAD86;
     display: flex;
 }
 .ContactUsContent p
@@ -282,4 +312,5 @@ table, th, td
     font-size: 20px;
     font-weight: 1000;
     width: 25%;
+    margin: 0px 20px 0px 20px;
 }
